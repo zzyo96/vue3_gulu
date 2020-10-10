@@ -13,13 +13,36 @@
 </template>
 
 <script lang="ts">
-import Topnav from '../components/Topnav.vue'
+import Topnav from "../components/Topnav.vue";
 export default {
   components: {
-    Topnav
-  }
-}
+    Topnav,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
+.banner {
+  padding: 100px 0;
+  background: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  >.actions {
+    padding: 8px 0;
+
+    >a {
+      background: #fff;
+      display: inline-block;
+      margin: 0 8px;
+      $h: 28px;
+      height: $h;
+      line-height: $h;
+      border-radius: $h/2;
+      padding: 0 8px;
+    }
+  }
+}
 </style>
