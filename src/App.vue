@@ -3,7 +3,13 @@
 </template>
 
 <script>
+import {
+  ref
+} from "vue";
 export default {
-  name: 'App'
-}
+  name: "App",
+  setup() {
+    const menuVisible = ref;
+  },
+};
 </script>
