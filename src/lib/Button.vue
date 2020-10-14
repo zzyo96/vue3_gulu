@@ -1,5 +1,5 @@
 <template>
-<button class="gulu-button" :class="{ [`theme-${theme}`]: theme }">
+<button class="gulu-button" :class="{[`gulu-theme-${theme}`]: theme}">
   <slot />
 </button>
 </template>
